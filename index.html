@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa Bukit Agung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: #2F855A;
+            bottom: -8px;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-green-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://placehold.co/50x50" alt="Lambang Desa Bukit Agung berwarna emas dengan bentuk perisai dan padi kapas" class="mr-3">
+                <h1 class="text-xl font-bold">Desa Bukit Agung</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="hover:text-green-300 transition">Beranda</a></li>
+                    <li><a href="#about" class="hover:text-green-300 transition">Profil Desa</a></li>
+                    <li><a href="#facilities" class="hover:text-green-300 transition">Fasilitas</a></li>
+                    <li><a href="#gallery" class="hover:text-green-300 transition">Galeri</a></li>
+                    <li><a href="#contact" class="hover:text-green-300 transition">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-96 flex items-center justify-center">
+        <img src="fotodesa.jpeg" alt="Pemandangan Desa Bukit Agung dengan sawah menghijau dan pegunungan di kejauhan saat matahari terbit" class="absolute w-full h-full object-cover">
+        <div class="hero-overlay absolute w-full h-full"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Desa Bukit Agung</h1>
+            <p class="text-xl md:text-2xl mb-8">Desa yang asri di kaki bukit dengan masyarakat yang ramah</p>
+            <a href="#about" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium inline-block transition">Explore Desa</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Profil Desa</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400" alt="Peta wilayah Desa Bukit Agung dengan batas-batas dusun dan fasilitas umum" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Desa Bukit Agung</h3>
+                    <p class="mb-4 text-gray-700">Desa Bukit Agung terletak di kawasan perbukitan dengan pemandangan alam yang indah. Masyarakatnya yang sebagian besar bekerja sebagai petani hidup rukun dan damai.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">Luas Wilayah</h4>
+                            <p class="text-gray-600">350 Hektar</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">Jumlah Penduduk</h4>
+                            <p class="text-gray-600">1.250 Jiwa</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">Jumlah Dusun</h4>
+                            <p class="text-gray-600">4 Dusun</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">Tahun Berdiri</h4>
+                            <p class="text-gray-600">1950</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-100 p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-green-800">Visi & Misi Desa</h3>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h4 class="font-bold text-lg mb-2">Visi</h4>
+                        <p class="text-gray-700">"Mewujudkan Desa Bukit Agung yang Mandiri, Sejahtera, dan Berbudaya dengan Berlandaskan Gotong Royong"</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h4 class="font-bold text-lg mb-2">Misi</h4>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li class="mb-2">Meningkatkan kualitas sumber daya manusia</li>
+                            <li class="mb-2">Mengembangkan potensi ekonomi desa</li>
+                            <li class="mb-2">Mewujudkan tata kelola pemerintahan yang baik</li>
+                            <li class="mb-2">Melestarikan nilai-nilai budaya dan kearifan lokal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Fasilitas Desa</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Facility 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://placehold.co/600x400" alt="Gedung Balai Desa Bukit Agung dengan arsitektur tradisional dan lapangan depan yang luas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Balai Desa</h3>
+                        <p class="text-gray-600 mb-4">Tempat berkumpul dan bermusyawarah warga serta pusat administrasi pemerintahan desa.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-2">📌</span>
+                            <span>Pusat Desa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facility 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://placehold.co/600x400" alt="SD Negeri Bukit Agung dengan halaman bermain dan bangunan baru bercat cerah" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">SD Negeri Bukit Agung</h3>
+                        <p class="text-gray-600 mb-4">Sekolah dasar negeri dengan fasilitas lengkap untuk pendidikan anak-anak desa.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-2">📌</span>
+                            <span>Dusun Krajan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facility 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://placehold.co/600x400" alt="Puskesmas Pembantu dengan taman obat keluarga dan parkir sepeda motor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Puskesmas Pembantu</h3>
+                        <p class="text-gray-600 mb-4">Fasilitas kesehatan dasar untuk pelayanan kesehatan warga desa.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-2">📌</span>
+                            <span>Dusun Sumberejo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Galeri Desa</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Panen raya di sawah Desa Bukit Agung dengan petani sedang memikul padi" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Kegiatan kerja bakti membersihkan sungai oleh karang taruna desa" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Pertunjukan wayang kulit di balai desa dengan penonton yang antusias" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Pemandangan matahari terbenam di persawahan dengan garis bukit di kejauhan" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Proses pembuatan kerajinan tangan anyaman bambu oleh ibu-ibu PKK" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Anak-anak desa sedang bermain di lapangan dengan latar pohon beringin besar" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Upacara adat pernikahan dengan pakaian tradisional dan dekorasi janur" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300" alt="Pasar tradisional pagi hari dengan penjual sayur dan buah lokal" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Hubungi Kami</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Kantor Desa Bukit Agung</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="mr-3 mt-1">📍</span>
+                            <p>Jl. Raya Bukit Agung No. 123, Kecamatan Pegunungan, Kabupaten Hijau Makmur, Provinsi Sejahtera</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-3">📞</span>
+                            <p>(0271) 456789</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-3">📧</span>
+                            <p>desa.bukitagung@domain.com</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">Jam Pelayanan</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between max-w-xs">
+                            <span>Senin - Kamis:</span>
+                            <span>08.00 - 14.00 WIB</span>
+                        </li>
+                        <li class="flex justify-between max-w-xs">
+                            <span>Jumat:</span>
+                            <span>08.00 - 11.00 WIB</span>
+                        </li>
+                        <li class="flex justify-between max-w-xs">
+                            <span>Sabtu:</span>
+                            <span>08.00 - 13.00 WIB</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-2">Media Sosial:</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white text-green-800 p-2 rounded-full w-10 h-10 flex items-center justify-center hover:bg-green-100 transition">
+                                <span>FB</span>
+                            </a>
+                            <a href="#" class="bg-white text-green-800 p-2 rounded-full w-10 h-10 flex items-center justify-center hover:bg-green-100 transition">
+                                <span>IG</span>
+                            </a>
+                            <a href="#" class="bg-white text-green-800 p-2 rounded-full w-10 h-10 flex items-center justify-center hover:bg-green-100 transition">
+                                <span>YT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Formulir Kontak</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block mb-2">Subjek</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded font-medium transition">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition">
+        <span>WA</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/40x40" alt="Lambang kecil Desa Bukit Agung versi monokrom" class="mr-3">
+                        <h3 class="text-xl font-bold">Desa Bukit Agung</h3>
+                    </div>
+                    <p class="mt-2 text-gray-400 text-sm">Desa yang Asri, Damai, dan Berbudaya</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-sm">© 2023 Pemerintah Desa Bukit Agung</p>
+                    <p class="text-gray-400 text-sm">Semua hak dilindungi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('block');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Kami akan segera menghubungi Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
